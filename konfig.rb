@@ -5,11 +5,11 @@
 class Konfig < Formula
   desc ""
   homepage "https://github.com/ppcool1163/konfig"
-  version "0.1"
+  version "0.2"
 
   on_macos do
-    url "https://github.com/ppcool1163/konfig/releases/download/v0.1/konfig_0.1_darwin_all.tar.gz"
-    sha256 "82d35fc6a1e0ede660a0cba8ba0939518ec5951b3c4b4cc3b3de3864278afbe3"
+    url "https://github.com/ppcool1163/konfig/releases/download/v0.2/konfig_0.2_darwin_all.tar.gz"
+    sha256 "0d3fed7e76ebda868c33ee4daca4e84a3015e06a11823243ac39850a68b2bff7"
 
     def install
       bin.install "konfig"
@@ -18,16 +18,16 @@ class Konfig < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ppcool1163/konfig/releases/download/v0.1/konfig_0.1_linux_arm64.tar.gz"
-      sha256 "b30750a05f0044c342f0ebea455360a01cbf7dc5ee4da05709dc6b5adb502919"
+      url "https://github.com/ppcool1163/konfig/releases/download/v0.2/konfig_0.2_linux_arm64.tar.gz"
+      sha256 "3d2d8b8c3a54ef26653b6b9ab1798a6cebc91fca85ec0eb03c3f287afc83d818"
 
       def install
         bin.install "konfig"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ppcool1163/konfig/releases/download/v0.1/konfig_0.1_linux_amd64.tar.gz"
-      sha256 "85f976de26acd4c5fb60958793bada654540d61d864583625a51d12f2ff23ccf"
+      url "https://github.com/ppcool1163/konfig/releases/download/v0.2/konfig_0.2_linux_amd64.tar.gz"
+      sha256 "13cc187a4dc17ad9922f5fed68e772a08b140af216f3d164a4003efb18756704"
 
       def install
         bin.install "konfig"
